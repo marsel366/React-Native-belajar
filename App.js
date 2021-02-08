@@ -59,7 +59,14 @@ const App: () => React$Node = () => {
                 <DebugInstructions />
               </Text>
             </View>
-            
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>Learn More</Text>
+              <Text style={styles.sectionDescription}>
+                Read the docs to discover what to do next:
+              </Text>
+            </View>
+            <LearnMoreLinks />
+          </View>
         </ScrollView>
       </SafeAreaView>
     </>
@@ -67,36 +74,36 @@ const App: () => React$Node = () => {
 };
 
 const styles = StyleSheet.create({
-        scrollView: {
-        backgroundColor: Colors.lighter,
+  scrollView: {
+    backgroundColor: Colors.lighter,
   },
   engine: {
-        position: 'absolute',
+    position: 'absolute',
     right: 0,
   },
   body: {
-        backgroundColor: Colors.white,
+    backgroundColor: Colors.white,
   },
   sectionContainer: {
-        marginTop: 32,
+    marginTop: 32,
     paddingHorizontal: 24,
   },
   sectionTitle: {
-        fontSize: 24,
+    fontSize: 24,
     fontWeight: '600',
     color: Colors.black,
   },
   sectionDescription: {
-        marginTop: 8,
+    marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
     color: Colors.dark,
   },
   highlight: {
-        fontWeight: '700',
+    fontWeight: '700',
   },
   footer: {
-        color: Colors.dark,
+    color: Colors.dark,
     fontSize: 12,
     fontWeight: '600',
     padding: 4,
